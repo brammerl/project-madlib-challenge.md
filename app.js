@@ -18,7 +18,7 @@ const plNounOne = document.getElementById('pl-noun-1-input');
 const plNounTextOne = document.getElementById('pl-noun-1');
 const plNounTextTwo = document.getElementById('pl-noun-2');
 const plNounTextThr = document.getElementById('pl-noun-3');
-
+const plNounTextFour = document.getElementById('pl-noun-4')
 
 const verbOne = document.getElementById('verb-1-input');
 const verbTextOne = document.getElementById('verb-1');
@@ -59,6 +59,7 @@ function putAnswersIn() {
     plNounTextOne.textContent = plNounFinal;
     plNounTextTwo.textContent = plNounFinal;
     plNounTextThr.textContent = plNounFinal;
+    plNounTextFour.textContent = plNounFinal;
 
     const verbOneFinal = verbOne.value;
     verbTextOne.textContent = verbOneFinal;
@@ -79,9 +80,18 @@ function putAnswersIn() {
     nounTextSix.textContent = nounSixFinal;
 
     document.getElementById('new-mad-lib').style.visibility = 'visible';
+    document.getElementById('input-section').style.visibility = 'hidden';
+}
+
+function reset() {
+    document.getElementById('input-section').style.visibility = 'visible';
+    document.getElementById('new-mad-lib').style.visibility = 'hidden';
 }
 
 
 // eventlistener 
 const myButton = document.getElementById('button');
 myButton.addEventListener('click', putAnswersIn);
+
+const myButtonTwo = document.getElementById('resetButton');
+myButtonTwo.addEventListener('click', reset);
