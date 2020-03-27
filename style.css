@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+#title-area {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 50px;
+    height: 175px;
+}
+
+/* list properties  */
+ul {
+    list-style-type: none;
+    border-radius: 19px;
+    width: 75%;
+    display: block;
+    margin : 0 auto;
+    -webkit-box-shadow: -1px 0px 10px 6px rgba(0,0,0,0.13); 
+box-shadow: -1px 0px 10px 6px rgba(0,0,0,0.13);
+}
+
+li {
+    padding: 10px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* input section + button details */
+#input-section {
+    display: table-cell;
+    float: left;
+    width: 50%;
+    height: 100%;
+    visibility: visible;
+}
+
+input[type="text"] {
+    display: block;
+    margin : 0 auto;
+    height: 60px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#button {
+    display: block;
+    margin : 20px auto;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+
+/* mad-lib area details */
+h2 {
+   font-family: 'Courier New', Courier, monospace;
+   text-decoration: underline solid black;
+   font-size: 2em;
+}
+
+
+#new-mad-lib {
+    font-family: 'Courier New', Courier, monospace;
+    display: table-cell;
+    float:right;
+    font-size: 1.5em;
+    width: 50%;
+    /* visibility: hidden; */
+}
+
